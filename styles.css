@@ -33,6 +33,7 @@ a {
 figcaption {
     color: var(--dark);
     font-family: 'Karla', sans-serif;
+    text-align: left;
 }
 
 figure > img {
