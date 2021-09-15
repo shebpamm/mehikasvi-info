@@ -5,30 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="styles.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js" 
+        integrity="sha512-+VS2+Nl1Qit71a/lbncmVsWOZ0BmPDkopw5sXAS2W+OfeceCEd9OGTQWjgVgP5QaMV4ddqOIW9XLW7UVFzkMAw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script src="action.js"></script>
 </head>
 <body>
     <nav class="header">
-        <a class="logo" href=/index.html><img src="logo.svg"></img></a>
-        <a href=/index.html><span>Mehitähdet</span></a>
-        <a href=/index.html><span>Mehipuut</span></a>
-        <a href=/index.html><span>Itulehdet</span></a>
-        <a href=/index.html><span>Härmälehdet</span></a>
+        <a class="logo" href="/" tabindex="1"><img alt="succulent logo" src="logo.svg"></img></a>
+        <button id="nav-menu" aria-label="Open menu" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="mehitahdet.html"><span>Mehitähdet</span></a>
+        <a href="mehipuut.html"><span>Mehipuut</span></a>
+        <a href="itulehdet.html"><span>Itulehdet</span></a>
+        <a href="harmalehdet.html"><span>Härmälehdet</span></a>
     </nav>
     <div class="container">
         <div class="content">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper, nunc eget sagittis fermentum, leo urna vestibulum metus, at porta ex nisi vel neque. Nam congue risus id interdum gravida. Nam placerat gravida mi, quis euismod velit congue ut. Maecenas tempor lacus quis massa pharetra auctor non vel eros. Nunc accumsan erat eu dolor dictum, sed scelerisque lacus blandit. Etiam id finibus lectus, at semper libero. Nulla consectetur placerat metus, ut tincidunt nisi iaculis eget. Phasellus sit amet est ante. Nunc at ipsum tellus. Integer tincidunt, enim ac molestie aliquet, ante sem semper metus, at vestibulum enim neque quis lorem. Ut consequat mi sed libero volutpat hendrerit. Aenean laoreet est eget blandit feugiat. In porttitor sollicitudin lacus, quis ornare mauris sollicitudin eu.
-
-                Etiam tincidunt lacus sit amet sem suscipit mollis. Duis varius augue et metus sagittis, sed efficitur magna suscipit. Duis at sollicitudin tortor, sit amet gravida sem. Suspendisse aliquet nibh elementum, sollicitudin velit sit amet, semper nisl. Nulla tempor arcu sed ornare imperdiet. Curabitur sit amet risus molestie, lacinia tortor at, rhoncus erat. Nam non sollicitudin eros. Mauris vitae aliquet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu dignissim ante. Mauris non nunc ac neque tempor luctus non fermentum tellus. Ut justo augue, efficitur eget pharetra ut, volutpat id arcu. Nunc arcu nisl, sagittis eget rutrum a, eleifend ac diam. Duis ullamcorper, nisi at feugiat venenatis, metus neque dignissim lorem, vel mollis est neque sit amet sapien. In interdum sem non sollicitudin dictum. Quisque laoreet consectetur nisl ut lobortis.
-                
-                Nulla efficitur, nulla quis fermentum euismod, metus ipsum suscipit nibh, non luctus lectus mi sed mi. Quisque pulvinar quam in placerat accumsan. Donec sit amet elit quis turpis iaculis sodales id eget magna. Phasellus a nunc felis. Etiam sed faucibus quam. Quisque vel gravida sem. Vestibulum augue lacus, sollicitudin a bibendum vitae, volutpat vitae tortor. Quisque et lorem laoreet nisl vestibulum mollis. Morbi nibh erat, aliquam ut facilisis eget, placerat a felis. Sed vitae scelerisque dolor.
-                
-                Phasellus maximus lacus purus, a porta velit semper nec. Nulla a auctor orci. Nam sodales ligula commodo elit feugiat, eu aliquet nisi egestas. Quisque placerat luctus iaculis. Nunc ante libero, dignissim eu lectus id, semper laoreet est. Quisque nec metus sodales, porta augue vel, facilisis nulla. In auctor ligula quam, eu vulputate ipsum euismod imperdiet. Fusce fermentum quam id est malesuada vulputate. Vivamus dictum consequat volutpat. Cras vestibulum nulla vitae magna aliquet tempor. Maecenas tristique tellus quis erat lobortis rutrum.
-                
-                Mauris at risus quis ante porttitor egestas. Vivamus a efficitur nulla. Pellentesque facilisis tincidunt ipsum non tempor. Sed quis tortor turpis. Ut ac bibendum dui, vitae tempor turpis. In ullamcorper, lectus eget semper laoreet, erat ligula porttitor mauris, eu eleifend odio lacus et libero. Curabitur ullamcorper urna interdum, ultrices ex eu, hendrerit quam.</p>
-    
+            <h1>Tervetuloa!</h1>
+            <p>Tältä sivulta löydät kaikenlaista tietoa mehikasveista.</p>
+            <p>Mehikasvit eli sukkulentit ovat pitkäaikaiseen kuivuuteen sopeutuneita kasveja. Mehikasvit ovat erikoistuneet varastoimaan vettä lehtiinsä taikka varsiinsa, 
+                joiden avulla ne kykenevät selviämään hyvinkin kuivissa olosuhteissa. Näissä kuivissa paikoissa on vähemmän kilpailua ja kasvinsyöjäeläimiä.
+            </p>
+            <p>Mehikasveja on valtava määrä mutta tältä sivulta löydät tietoa neljästä eri alalajista.</p>
         </div>
     </div>
 </body>
