@@ -76,7 +76,7 @@ figure > img {
 
 .logo > img {
     height: 57px;
-    filter: invert();
+    filter: invert(1);
 }
 
 
