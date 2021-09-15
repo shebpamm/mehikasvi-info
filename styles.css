@@ -33,7 +33,6 @@ a {
 figcaption {
     color: var(--dark);
     font-family: 'Karla', sans-serif;
-    text-align: left;
 }
 
 figure > img {
@@ -89,7 +88,6 @@ figure > img {
 .content {
     max-width: 700px;
     padding: 20px;
-    text-align: justify;
 }
 
 .content > h1 {
