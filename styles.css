@@ -90,6 +90,10 @@ figure > img {
     padding: 20px;
 }
 
+.content > p {
+    hyphens: manual;
+}
+
 .content > h1 {
     font-size: 3.2rem;
     text-align: center;
