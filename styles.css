@@ -41,7 +41,7 @@ figure > img {
     border-radius: 4px;
 }
 
-.header {
+header > nav {
     background-color: var(--dark);
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ figure > img {
     overflow: hidden;
 }
 
-.header > a {
+header > nav > a {
     display: flex;
     align-items: center;
     margin-left: 50px;
@@ -62,15 +62,15 @@ figure > img {
     vertical-align: middle;
 }
 
-.header > a > span {
+header > nav > a > span {
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), color 0.3s;
 }
 
-.header > a:hover > span {
+header > nav > a:hover > span {
     transform: translateY(-5px);
 }
 
-.header > .logo {
+header > nav > .logo {
     margin: 10px auto 10px 20px;
 }
 
@@ -80,35 +80,35 @@ figure > img {
 }
 
 
-.container {
+main {
     display: flex;
     justify-content: center;
 }
 
-.content {
+article {
     max-width: 700px;
     padding: 20px;
 }
 
-.content > p {
+article > p {
     hyphens: manual;
 }
 
-.content > h1 {
+article > h1 {
     font-size: 3.2rem;
     text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-    .header {
+    header > nav {
         flex-wrap: wrap;
     }
 
-    .header > a:not(.logo) {
+    header > nav > a:not(.logo) {
         display: none;
     }
 
-    .header.open > a:not(.logo) {
+    header > nav.open > a:not(.logo) {
         display: flex;
         flex-basis: 100%;
         justify-content: center;
@@ -116,7 +116,7 @@ figure > img {
         border-bottom: 2px solid var(--foreground);
     }
 
-    .header.open > a:not(.logo):last-of-type {
+    header > nav.open > a:not(.logo):last-of-type {
         border-bottom: unset;
     }
 
