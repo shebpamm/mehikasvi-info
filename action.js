@@ -1,8 +1,5 @@
 $(document).ready(function(){
     $('#nav-menu').click(function(){
-
-        
-
         var $selector = $('.header');
         let closing = $selector.hasClass('open');
         $selector
