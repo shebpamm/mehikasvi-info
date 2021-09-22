@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#nav-menu').click(function(){
-        var $selector = $('.header');
+        var $selector = $('header');
         let closing = $selector.hasClass('open');
         $selector
         .data('oHeight', $selector.height())
